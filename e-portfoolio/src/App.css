@@ -1,3 +1,228 @@
 .App {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.content {
+  margin-top: 10vh;
+  height: 100%;
+  width: 100%;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: #222222;
+  overflow: hidden;
+  display: flex;
+  justify-content: end;
+  flex-direction: row;
+  height: 10%;
+  width: 100%;
+  border-bottom: #edd434 2px solid;
+}
+
+.navbar button {
+  background-color: #222222;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 1% 1.1%;
   text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+}
+
+.navbar button:hover {
+  background-color: #555;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  background-color: #333;
+  color: white;
+  padding: 3% 4%;
+  height: 100%;
+  width: 100%;
+}
+
+.about-me-header {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  height: 10%;
+  width: 100%;
+  text-decoration-line: underline;
+  text-decoration-color: #edd434;
+  text-decoration-thickness: 5%;
+  text-underline-offset: 15%;
+}
+
+.about-me-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  margin-top: 4%;
+  font-size: 1.2rem;
+  height: 90%;
+  width: 100%;
+}
+
+.about-me-content p {
+  width: 75%;
+  text-align: justify;
+  margin-top: 2%;
+}
+
+.about-me-content img {
+  float: left;
+  width: 25%;
+  height: auto;
+  margin: 0% 2%;
+  border: #edd434 2px solid;
+  border-radius: 20%;
+}
+
+.about-me-content a:link {
+  color: #edd434;
+}
+
+.about-me-content a:visited {
+  color: #edd434;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  background-color: #333;
+  align-items: center;
+  color: white;
+  padding: 3% 4%;
+  height: 100%;
+  width: 100%;
+}
+
+.home h1 {
+  font-size: 4rem;
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  text-decoration-line: underline;
+  text-decoration-color: #edd434;
+  text-decoration-thickness: 5%;
+  text-underline-offset: 15%;
+}
+
+.home img {
+  margin: 5%;
+}
+
+.contact {
+  background-color: #2f2f2f;
+  color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3% 4%;
+  height: 100%;
+  width: 100%;
+}
+
+.contact-header {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  height: 10%;
+  width: 100%;
+  text-decoration-line: underline;
+  text-decoration-color: #ffc400;
+  text-decoration-thickness: 5%;
+  text-underline-offset: 15%;
+  margin-bottom: 3%;
+}
+
+.contact p {
+  text-align: justify;
+  margin-bottom: 2%;
+  font-size: 1.3rem;
+}
+
+.contact-info {
+  margin: 20px auto;
+  width: 50%;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-info p {
+  margin: 10px 0;
+}
+
+.contact-info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.contact-info-item img {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.projects {
+  background-color: #2f2f2f;
+  color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3% 4%;
+  height: 100%;
+  width: 100%;
+}
+
+.projects-header {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  height: 10%;
+  width: 100%;
+  text-decoration-line: underline;
+  text-decoration-color: #ffc400;
+  text-decoration-thickness: 5%;
+  text-underline-offset: 15%;
+  margin-bottom: 3%;
+}
+
+.projects p {
+  text-align: justify;
+  margin-bottom: 2%;
+  font-size: 1.3rem;
+}
+
+.projects-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2%;
+  padding: 2%;
+  width: 30%;
+  background-color: #333;
+  border: #edd434 2px solid;
+  border-radius: 20px;
 }
