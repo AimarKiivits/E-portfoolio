@@ -10,7 +10,7 @@ const Contact = () => {
             <div class="contact-info">
                 <div class="contact-info-item">
                     <img src="email logo.webp" alt="email logo" />
-                    <p><strong>Email:</strong> Aimarkiivits1@gmail.com</p>
+                    <p><strong>Email:</strong> Aimar.kiivits@voco.ee</p>
                 </div>
                 <div class="contact-info-item">
                     <img src="telephone_logo.webp" alt="phone logo" />
