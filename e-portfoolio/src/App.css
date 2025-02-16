@@ -75,16 +75,19 @@
 }
 
 .about-me-content p {
-  width: 75%;
+  width: 50%;
   text-align: justify;
+  font-size: 1.3rem;
   margin-top: 2%;
+  margin-right: 10%;
+  padding-right: 7%;
 }
 
 .about-me-content img {
   float: left;
   width: 25%;
   height: auto;
-  margin: 0% 2%;
+  margin: 0% 0% 0% 10%;
   border: #edd434 2px solid;
   border-radius: 20%;
 }
@@ -109,14 +112,21 @@
 }
 
 .home h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   margin-top: 6%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   text-decoration-line: underline;
   text-decoration-color: #edd434;
   text-decoration-thickness: 5%;
   text-underline-offset: 15%;
+}
+
+.home p {
+  font-size: 1.3rem;
+  text-align: justify;
+  margin-top: 2.5%;
 }
 
 .home img {
@@ -225,4 +235,109 @@
   background-color: #333;
   border: #edd434 2px solid;
   border-radius: 20px;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal-overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 30%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content h2 {
+    margin-bottom: 3%;
+    font-size: 2.2rem;
+    color: #edd434;
+}
+
+.modal-content p {
+    color: white;
+    font-size: 1.3rem;
+}
+
+.close-button {
+    margin-top: 15px;
+    background: #edd434;
+    color: black;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.close-button:hover {
+    background: darkred;
+}
+
+.project-card {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  width: 300px;
+  border: #edd434 2px solid;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(255, 255, 255, 0.1);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.project-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 6%;
+}
+
+.footer {
+  background-color: #222222;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 1.5% 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: #edd434 2px solid;
+}
+
+.footer a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer p {
+  padding: 0% 1%;
 }
