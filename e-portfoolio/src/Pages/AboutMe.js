@@ -7,7 +7,7 @@ const AboutMe = () => {
                 <h1>About Me</h1>
             </div>
             <div className="about-me-content">
-                    <img src="/me.png" alt="Aimar Kiivits" />
+                    <img src="/me.jpeg" alt="Aimar Kiivits" />
                     <p>
                         I am Aimar Kiivits, a 19 year old from Tartu, Estonia. I am currently studying software development at VOCO, aka Tartu Vocational College.
                         I have always had an interest in computers, and after trying out programming during a school event, I realized that I wanted to learn more.
