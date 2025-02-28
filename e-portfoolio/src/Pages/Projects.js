@@ -21,7 +21,11 @@ const Projects = () => {
                             <div className="modal-content">
                                 <h2>Biscuit Tapper</h2>
                                 <p>Biscuit Tapper is a copy of cookie clicker. I made it because I wanted to see how hard it would be to make the basic parts of a clicker game (upgrades, gaining clicks over time, etc).</p>
-                                <p>It was made using React, Express, MySQL and Node.js.</p>
+                                <p>It was made using React, Express, MySQL, JavaScript and Node.js.</p>
+                                <div className="modal-links">
+                                    <a href="https://github.com/AimarKiivits/Biscuit-Tapper" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                    <a href="https://biscuit.aimarkiivits.ee" target="_blank" rel="noopener noreferrer">Live</a>
+                                </div>
                                 <button
                                     className="close-button"
                                     onClick={() => setBiscuit(false)}
@@ -43,6 +47,9 @@ const Projects = () => {
                                 <h2>E-portfolio</h2>
                                 <p>This is my e-portfolio. I made it as a project for one of my courses at school.</p>
                                 <p>It was made using React (for some reason, could have done it with pure HTML and CSS).</p>
+                                <div className="modal-links">
+                                    <a href="https://github.com/AimarKiivits/E-portfoolio" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                </div>
                                 <button
                                     className="close-button"
                                     onClick={() => setPortfolio(false)}

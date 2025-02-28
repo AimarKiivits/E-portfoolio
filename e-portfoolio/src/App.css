@@ -7,7 +7,7 @@
 
 .content {
   margin-top: 10vh;
-  height: 100%;
+  height: 81.5%;
   width: 100%;
 }
 
@@ -28,17 +28,25 @@
 .navbar button {
   background-color: #222222;
   color: white;
-  border: none;
+  border: 2px solid #333;
+  border-radius: 5px;
   cursor: pointer;
   padding: 1% 1.1%;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 1rem;
+  margin: 0.5%;
+  width: 6%;
 }
 
 .navbar button:hover {
   background-color: #555;
+}
+
+.navbar .active {
+  color: #edd434;
+  border: 2px solid #edd434;
 }
 
 .about-me {
@@ -75,12 +83,9 @@
 }
 
 .about-me-content p {
-  width: 50%;
   text-align: justify;
   font-size: 1.3rem;
   margin-top: 2%;
-  margin-right: 10%;
-  padding-right: 7%;
 }
 
 .about-me-content img {
@@ -92,11 +97,49 @@
   border-radius: 20%;
 }
 
-.about-me-content a:link {
+.about-me-text {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  margin-right: 10%;
+  padding-right: 7%;
+}
+
+.about-me-text p {
+  margin-bottom: 3%;
+}
+
+.about-me-text a {
+  margin-bottom: 3%;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  max-width: 100%;
+  gap: 2%;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+}
+
+.skill img {
+  width: 100%;
+  height: auto;
+  padding: 10%;
+}
+
+a:link {
   color: #edd434;
 }
 
-.about-me-content a:visited {
+a:visited {
   color: #edd434;
 }
 
@@ -229,18 +272,6 @@
   flex-direction: row;
 }
 
-.project {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 2%;
-  padding: 2%;
-  width: 30%;
-  background-color: #333;
-  border: #edd434 2px solid;
-  border-radius: 20px;
-}
-
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -262,7 +293,7 @@
 }
 
 .modal-content {
-    background: #222;
+    background: #222222;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -281,6 +312,16 @@
     font-size: 1.3rem;
 }
 
+.modal-links {
+    display: flex;
+    justify-content: start;
+    margin-top: 3%;
+}
+
+.modal-links a {
+    margin-right: 5%;
+}
+
 .close-button {
     margin-top: 15px;
     background: #edd434;
@@ -297,7 +338,7 @@
 }
 
 .project-card {
-  background-color: #1e1e1e;
+  background-color: #222222;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -334,8 +375,10 @@
   padding: 1.5% 0;
   position: fixed;
   bottom: 0;
+  height: 8.5%;
   width: 100%;
   border-top: #edd434 2px solid;
+  font-size: 1rem;
 }
 
 .footer a {
