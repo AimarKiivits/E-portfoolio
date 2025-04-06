@@ -3,6 +3,7 @@ import React, { useState } from "react";
 const Projects = () => {
     const [biscuit, setBiscuit] = useState(false);
     const [portfolio, setPortfolio] = useState(false);
+    const [osu, setOsu] = useState(false);
 
     return (
         <div className="projects">
@@ -53,6 +54,28 @@ const Projects = () => {
                                 <button
                                     className="close-button"
                                     onClick={() => setPortfolio(false)}
+                                >
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    )}
+                </div>
+                <div className="projects-content">
+                    <div className="project-card" onClick={() => setOsu(true)}>
+                        <h2 className="">Osu! Trainer</h2>
+                        <img src="/osu.png" alt="Osu! Trainer" />
+                    </div>
+                    {osu && (
+                        <div className={`modal-overlay ${osu ? "show" : ""}`}>
+                            <div className="modal-content">
+                                <h2>Osu! Trainer</h2>
+                                <p>Osu! Trainer is a mobile app I am making with a few of my classmates for one of our lessons. It is meant to help you practice for Osu! a popular rythm game.</p>
+                                <p>We are making it using Expo and TypeScript.</p>
+                                <p>Currently the Github repo is private </p>
+                                <button
+                                    className="close-button"
+                                    onClick={() => setOsu(false)}
                                 >
                                     Close
                                 </button>
