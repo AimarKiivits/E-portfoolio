@@ -1,22 +1,11 @@
-.App {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
-}
-
 .content {
-  margin-top: 10vh;
-  height: 81.5%;
+  display: flex;
+  flex: 1;
   width: 100%;
 }
 
 .navbar {
-  position: fixed;
-  top: 0;
-  z-index: 1000;
   background-color: #222222;
-  overflow: hidden;
   display: flex;
   justify-content: end;
   flex-direction: row;
@@ -37,7 +26,6 @@
   display: inline-block;
   font-size: 1rem;
   margin: 0.5%;
-  width: 6%;
 }
 
 .navbar button:hover {
@@ -55,7 +43,7 @@
   background-color: #333;
   color: white;
   padding: 3% 4%;
-  height: 100%;
+  flex: 1;
   width: 100%;
 }
 
@@ -130,7 +118,7 @@
 
 .skill img {
   width: 100%;
-  height: auto;
+  height: 90%;
   padding: 10%;
 }
 
@@ -238,7 +226,6 @@ a:visited {
   flex-direction: column;
   align-items: center;
   padding: 3% 4%;
-  height: 100%;
   width: 100%;
 }
 
@@ -370,11 +357,10 @@ a:visited {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   color: white;
   text-align: center;
   padding: 1.5% 0;
-  position: fixed;
-  bottom: 0;
   height: 8.5%;
   width: 100%;
   border-top: #edd434 2px solid;
@@ -388,4 +374,114 @@ a:visited {
 
 .footer p {
   padding: 0% 1%;
+}
+
+/* Mobile css */
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: max-content;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2%;
+  }
+
+  .navbar button {
+    width: 100%;
+    margin: 5px 0;
+    font-size: 1rem;
+  }
+
+  .content {
+    display: unset;
+    flex: 1;
+    overflow: scroll;
+  }
+
+  .home {
+    padding: 2% 4%;
+  }
+
+  .home h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .home p {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .about-me-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-me-content img {
+    width: 50%;
+    margin: 0 auto 20px;
+  }
+
+  .about-me-text {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .skills {
+    grid-template-columns: repeat(3, 2fr);
+    gap: 10px;
+    justify-items: center;
+  }
+
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+  }
+
+  .projects-content {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .project-card {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+
+  .modal-content {
+    width: 90%;
+    font-size: 1rem;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .contact-info-item {
+    margin: 10px 0;
+    width: 80%;
+  }
+
+  .contact-info-item img {
+    margin-bottom: 10px;
+  }
+
+  .footer {
+    flex-direction: column;
+    font-size: 0.9rem;
+    padding: 2% 0;
+    text-align: center;
+    height: max-content;
+  }
+
+  .footer p {
+    padding: 0.2rem 0;
+  }
 }
